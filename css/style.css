@@ -63,3 +63,19 @@ header nav ul a{
     width: 120px;
     height: auto;      
 }
+
+.pomodoro-container{
+    margin-top: 100px;
+}
+  
+.timer {
+    font-size: 60px;
+    margin: 20px 0;
+}
+  
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
