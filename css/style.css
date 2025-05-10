@@ -65,6 +65,7 @@ header nav ul a{
 }
 
 .pomodoro-container{
+
     position: fixed;
     bottom: 20px;      /* Distância do fundo */
     left: 20px;        /* Distância da lateral esquerda */
@@ -74,6 +75,7 @@ header nav ul a{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     z-index: 1000;
+
 }
   
 .timer {
