@@ -76,3 +76,23 @@ function resetTimer() {
   clock.classList.remove("short-break-mode", "long-break-mode");
   clock.classList.add("focus-mode");
 }
+
+const noteInput = document.getElementById('noteInput');
+const saveButton = document.getElementById('saveButton');
+
+function saveNotes() {
+    const notes = noteInput.value;
+    localStorage.setItem('savedNotes', notes);
+    alert('Anotações salvas!');
+}
+
+function loadNotes(){
+  const savedNotes = localStorage.getItem('savedNotes');
+  if (savedNotes) {
+      noteInput.value = savedNotes;
+  }
+}
+
+window.onload = loadNotes;
+
+saveButton.addEventListener('click', saveNotes);
