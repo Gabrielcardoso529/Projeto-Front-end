@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body {
+    background-image: url('../css/imagens/backgrounf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: aliceblue;
+    font-size: 2em;
+    text-align: center;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px #555;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul a{
+    text-decoration: none;
+    color: rgb(174, 101, 242);
+    font-weight: 400;
+}
+.spotify{
+    width: 45px;
+    height: auto;
+}
+.github{
+    width: 45px;
+    height: auto;
+}
+.alura{
+    width: auto;
+    height: 45px;
+}
+.chatgpt{
+    width: 45px;
+    height: auto;    
+}
+.logo{
+    width: 120px;
+    height: auto;      
+}
+
+.pomodoro-container{
+    position: fixed;
+    bottom: 20px;      /* Distância do fundo */
+    left: 20px;        /* Distância da lateral esquerda */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+  
+.timer {
+    font-size: 60px;
+    margin: 20px 0;
+    color: #000;
+    background-color: darkgoldenrod;
+}
+  
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-group{
+    margin: 20px 0;
+}
+
+.input-group label{
+    margin: 0 0px;
+}
+
+.input-group input {
+    width: 45px;
+    padding: 5px
+}
+
+.clock{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000 ;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+  .focus-mode{
+    background-color: #1e1e1e; /*preto */
+  }
+  .short-break-mode{
+    background-color: #2e7d32;
+  }
+  .long-break-mode{
+    background-color: brown;
+  }
+  .status{
+    background-color: #fff;
+  }
