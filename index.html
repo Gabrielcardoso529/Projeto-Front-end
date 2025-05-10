@@ -25,29 +25,36 @@
                     target="_blank">
                     <img src="./css/imagens/alura.png" alt="" class="alura"></a>
                 <a href="https://openai.com/" target="_blank">
-                    <img src="./css/imagens/chat.png" alt="" class="chatgpt">
-                </a>
+                    <img src="./css/imagens/chat.png" alt="" class="chatgpt"> </a>
             </ul>
         </nav>
-        </section>
     </header>
+
     <div class="pomodoro-container">
         <h1>Pomodoro</h1>
         <div class="input-group">
-            <labeL>Tempo de foco (min):</labeL>
-            <input type="number" id="inputFocus" value="25" min="1">
-            <label>Pausa Curta (min):</label>
+            <label for="inputfocus">Tempo de foco (min):</label>
+            <input type="number" id="inputfocus" value="25" min="1">
+            <label for="inputshortbreak">Pausa Curta (min):</label>
             <input type="number" id="inputshortbreak" value="5" min="1">
-            <label>Pausa Longa (min):</label>
+            <label for="inputlongbreak">Pausa Longa (min):</label>
             <input type="number" id="inputlongbreak" value="15" min="1">
         </div>
-        <div class="timer" id="timer">25:00</div>
+
+        <div class="clock">
+            <div class="timer" id="timer">25:00</div>
+        </div>    
+        
         <div class="controls">
             <button onclick="startTimer()">Iniciar</button>
             <button onclick="resetTimer()">Resetar</button>
+           
         </div>
+
         <p id="status">Tempo de foco</p>
     </div>
     
     <script src="./js/script.js"></script>
 </body>
+
+</html>
