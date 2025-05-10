@@ -65,7 +65,12 @@ header nav ul a{
 }
 
 .pomodoro-container{
+    text-align: center;
     margin-top: 100px;
+    padding: 40px;
+    background-color: #;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
 }
   
 .timer {
@@ -79,3 +84,48 @@ header nav ul a{
     font-size: 16px;
     cursor: pointer;
 }
+
+.input-group{
+    margin: 20px 0;
+}
+
+.input-group label{
+    margin: 0 10px;
+}
+
+.input-group input {
+    width: 60px;
+    padding: 5px
+}
+
+.clock{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000 ;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+.timer {
+    font-size: 48px;
+    color: #000;
+  }
+
+  .focus-mode{
+    background-color: #1e1e1e; /*preto */
+  }
+  .short-break-mode{
+    background-color: #2e7d32;
+  }
+  .long-break-mode{
+    background-color: brown;
+  }
+  .timer{
+    background-color: darkgoldenrod;
+    font-size: 48px;
+  }
